@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(156, 196, 255);
+}
+
+p {
+    text-align: justify; /* Alinhamento do testo*/
+}
