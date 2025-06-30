@@ -8,7 +8,9 @@
     }
 
     menu {
-        display: block;
+        display: block !important; 
+        
+        /* "!important" força o CSS a usar a propriedade descrita na linha. (no caso "display: block") */
     }
 
     nav a {
