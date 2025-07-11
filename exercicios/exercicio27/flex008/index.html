@@ -7,14 +7,17 @@
     <style>
         div.pai {
             background-color: lightsalmon;
-
+            flex-flow: row wrap;
+            align-items: flex-start;
             display: flex;
+
+            height: 400px;
         }
 
         div.filho {
             background-color: lightskyblue;
             border: 1px solid black;
-            flex: auto;
+            padding: 20px;
         }
     </style>
 </head>
@@ -23,9 +26,9 @@
     <div class="pai">
         <div class="filho">A</div>
         <div class="filho">B</div>
-        <div class="filho">C</div>
-        <div class="filho">D</div>
-        <div class="filho">E</div>
+        <div class="filho" style="align-self: flex-end;">C</div>
+        <div class="filho" style="align-self: center;">D</div>
+        <div class="filho" style="align-self: stretch;">E</div>
         <div class="filho">F</div>
         <div class="filho">G</div>
         <div class="filho">H</div>

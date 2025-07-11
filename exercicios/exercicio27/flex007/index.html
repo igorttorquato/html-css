@@ -9,12 +9,13 @@
             background-color: lightsalmon;
 
             display: flex;
+            flex-flow: row nowrap;
         }
 
         div.filho {
             background-color: lightskyblue;
             border: 1px solid black;
-            flex: auto;
+            padding: 40px;
         }
     </style>
 </head>
@@ -24,10 +25,10 @@
         <div class="filho">A</div>
         <div class="filho">B</div>
         <div class="filho">C</div>
-        <div class="filho">D</div>
+        <div class="filho" style="order: 1">D</div>
         <div class="filho">E</div>
         <div class="filho">F</div>
-        <div class="filho">G</div>
+        <div class="filho" style="order: -2;">G</div>
         <div class="filho">H</div>
     </div>
 </body>
