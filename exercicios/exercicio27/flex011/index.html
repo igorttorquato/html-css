@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.pai {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.filho {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div#cxA {
+            /*flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;*/
+
+            flex: 0 1 200px; /*grow, shrink, basis*/
+        }
+
+        div#cxB {
+            /*flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;*/
+
+            flex: 0 1 200px; /*grow, shrink, basis*/
+        }
+
+        div#cxC {
+            /*flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;*/
+
+            flex: 0 1 200px; /*grow, shrink, basis*/
+        }
+
+        /*
+            PADRÕES GLOBAIS FLEX
+
+            *flex: 0 1 auto  =  flex: initial
+            (valores iniciais do flex)
+
+            *flex: 0 0 auto  =  flex: none 
+            (nada flex)
+
+            *flex: 1 1 auto  =  flex: auto
+            (tudo flex)
+
+            *flex: 3  =  flex: 3 1 auto;  flex: 2  =  flex: 2 1 auto
+            (ele só define o primeiro valor, no caso o grow. Os outros valores seguem seu padrão)
+        
+        */
+
+    </style>
+</head>
+
+<body>
+    <div class="pai">
+        <div class="filho" id="cxA">A</div>
+        <div class="filho" id="cxB">B</div>
+        <div class="filho" id="cxC">C</div>
+    </div>
+</body>
+
+</html>
